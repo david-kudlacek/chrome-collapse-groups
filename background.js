@@ -3,10 +3,13 @@ async function collapseTabGroup(group) {
   // https://developer.chrome.com/docs/extensions/reference/api/tabGroups
   // To change the actual group, we call update():
   
+  const data = await chrome.storage.sync.get({ "isEnabled": true });
   const updatedGroup = {};
 
-  if (group.collapsed == false) {
+  if (data.isEnabled) {
     updatedGroup.collapsed = true;
+  } else {
+    updatedGroup.collapsed = false;
   }
 
   await chrome.tabGroups.update(group.id, updatedGroup);
