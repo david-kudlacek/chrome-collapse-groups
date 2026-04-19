@@ -1,2 +1,2 @@
-# chrome-collapse-groups
-Chrome extension that automatically collapses tab groups when you create them or restore a session.
+# About
+This is a Chrome browser extension that automatically collapses tab groups when they are created.
