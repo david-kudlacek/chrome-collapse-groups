@@ -1,3 +1,19 @@
-"background": {
-  "service_worker": "background.js"
+{
+  "manifest_version": 3,
+  "name": "Collapse Tab Groups",
+  "version": "1.0.0",
+  "description": "An extension that collapses tab groups on startup",
+  "permissions": ["tabGroups"],
+  "icons": {
+    "24": "images/icon-24.png",
+    "48": "images/icon-48.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "images/icon-24.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
 }
+
