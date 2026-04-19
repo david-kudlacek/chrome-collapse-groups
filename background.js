@@ -1,6 +1,7 @@
+// https://developer.chrome.com/docs/extensions/reference/api/tabGroups
+
 async function collapseTabGroup(group) {
   // 'group' is just a copy of the data.
-  // https://developer.chrome.com/docs/extensions/reference/api/tabGroups
   // To change the actual group, we call update():
   
   const data = await chrome.storage.sync.get({ "isEnabled": true });
